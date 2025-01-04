@@ -21,8 +21,8 @@ export default function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/main-menu" element={<MainMenu />} />
                 <Route path="/dishes/:categoryName" element={<Dish />} />
-                <Route path="/recipes" element={<Recipes />} />
-                <Route path="/custom-dish" element={<CustomDish />} />
+                <Route path="/Recipe/:DishName" element={<Recipes />} />
+                <Route path="/customDish" element={<CustomDish />} />
               </Routes>
             </div>
           </main>

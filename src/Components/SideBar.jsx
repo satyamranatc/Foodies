@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HomeIcon, MenuIcon } from 'lucide-react';
+import { HomeIcon, MenuIcon,PlusIcon } from 'lucide-react';
 
 export default function SideBar() {
   return (
@@ -23,6 +23,15 @@ export default function SideBar() {
             >
               <MenuIcon className="h-5 w-5" />
               <span className="font-medium">Main Menu</span>
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="/customDish" 
+              className="flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors duration-200"
+            >
+              <PlusIcon className="h-5 w-5" />
+              <span className="font-medium">Custom Dish</span>
             </Link>
           </li>
         </ul>
